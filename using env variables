@@ -3,3 +3,5 @@ This is supported, although NOT encouraged, as the environment variables can end
 
 AWS_ACCESS_KEY_ID` - specify the access key ID
 AWS_SECRET_ACCESS_KEY` - the secret access key
+
+docker run --rm -e AWS_ACCESS_KEY_ID=my-key-id -e AWS_SECRET_ACCESS_KEY=my-secret-access-key -v $(pwd):/aws mikesir87/aws-cli aws s3 ls 
