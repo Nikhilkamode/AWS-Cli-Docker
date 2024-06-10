@@ -1,0 +1,5 @@
+Using environment variables
+This is supported, although NOT encouraged, as the environment variables can end up in command-line history, available for container inspection, etc.
+
+AWS_ACCESS_KEY_ID` - specify the access key ID
+AWS_SECRET_ACCESS_KEY` - the secret access key
