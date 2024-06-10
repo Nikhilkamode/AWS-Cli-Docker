@@ -1,1 +1,2 @@
 You can setup an alias for aws to simply start a container, hiding the fact that it's not actually installed on the machine. Then, updating the version simply becomes a docker pull mikesir87/aws-cli.
+alias aws='docker run --rm -tiv $HOME/.aws:/root/.aws -v $(pwd):/aws mikesir87/aws-cli aws'
